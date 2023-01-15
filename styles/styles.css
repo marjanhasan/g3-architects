@@ -150,13 +150,29 @@ nav ul{
     background-color: var(--btn-color);
     border-radius: 5px;
     color: #fff;
-    width: max-content;
+    height: 200px;
+    width: 342px;
     padding: 20px;
     position: absolute;
     bottom: -30px;
     left: -30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.floating-section h2{
+    font-weight: 700;
+    font-size: 65px;
+}
+.floating-section p{
+    font-weight: 500;
+    font-size: 25px;
 }
 /* main section two end  */
+.three{
+    margin-top: 50px;
+}
 .three > h2{
     text-align: left;
 }
@@ -265,6 +281,17 @@ footer > p{
         grid-template-columns: 1fr;
         justify-items: center;
     }
+    .floating-section{
+        left: 40%;
+        height: 100px;
+        width: 180px;
+    }
+    .floating-section h2{
+        font-size: 25px;
+    }
+    .floating-section p{
+        font-size: 12px;
+    }
     .three > h2, .three > p{
         text-align: center;
     }
@@ -280,6 +307,9 @@ footer > p{
 @media only screen and (max-width: 425px) {
     .left-one{
         grid-template-columns: 1fr;
+    }
+    .floating-section{
+        left: 30%;
     }
     .four-logo{
         flex-direction: column;
