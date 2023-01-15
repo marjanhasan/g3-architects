@@ -42,10 +42,11 @@
     font-size: 16px;
     color: #727272;
 }
-/* common css end  */
+/* common css or utilities end  */
 
+/* header section start  */
 header{
-    background-color: rgba(255, 143, 14, 0.192);
+    background-color: #FF900E1A;
 }
 .menu{
     display: flex;
@@ -81,6 +82,9 @@ nav ul{
     width: 100%;
 }
 /* header section end  */
+
+/* main section body start  */
+/* main section one start  */
 .section-one{
     display: flex;
     gap: 40px;
@@ -108,6 +112,8 @@ nav ul{
     color: var(--btn-color);
 }
 /* main section one end  */
+
+/* main section two start  */
 .section-two{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -121,10 +127,10 @@ nav ul{
     border-left: 2px solid var(--btn-color);
 }
 .left-two-box{
-    padding: 20px 0 0 15px;
-    border: 1px solid gray;
+    padding: 20px 0 0 30px;
     border-radius: 5px;
     margin-bottom: 10px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
 }
 .left-two-box h4{
     font-weight: 600;
@@ -135,6 +141,7 @@ nav ul{
     white-space: wrap;
     overflow: hidden; 
     text-overflow: ellipsis;
+    padding-bottom: 15px;
 }
 .right-two{
     max-width: 800px;
@@ -142,9 +149,11 @@ nav ul{
 .right-two__image{
     position: relative;
     width: 95%;
+    height: 100%;
 }
 .right-two__image img{
     width: 100%;
+    height: 100%;
 }
 .floating-section{
     background-color: var(--btn-color);
@@ -170,8 +179,10 @@ nav ul{
     font-size: 25px;
 }
 /* main section two end  */
+
+/* main section three start  */
 .three{
-    margin-top: 50px;
+    margin-top: 100px;
 }
 .three > h2{
     text-align: left;
@@ -182,7 +193,6 @@ nav ul{
 .three-box{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 50px;
 }
 .three-box-one{
@@ -196,6 +206,7 @@ nav ul{
     justify-content: center;
     align-items: center;
     transform: scale(.8);
+    margin: 50px 0;
 }
 .three-box-one:hover{
     transform: scale(1);
@@ -213,6 +224,8 @@ nav ul{
     font-size: 20px;
 }
 /* main section three end  */
+
+/* main section four start  */
 .four{
     text-align: center;
     margin-top: 50px;
@@ -224,11 +237,12 @@ nav ul{
     align-items: center;
     flex-wrap: wrap;
     gap: 50px;
-    margin-bottom: 80px;
+    margin-bottom: 200px;
     filter: grayscale(1);
 }
 /* main section four end  */
 
+/* footer section start  */
 footer{
     background-color: rgba(255, 143, 14, 0.192);
 }
@@ -251,7 +265,6 @@ footer{
     background: none;
     width: 300px;
     padding: 20px 25px;
-    /* color: #FFFFFF; */
     border-radius: 5px;
     margin-bottom: 15px;
 }
@@ -261,9 +274,10 @@ footer > p{
     text-align: center;
     padding-bottom: 25px;
 }
-
 /* footer section end  */
+/* main css end  */
 
+/* media query start  */
 /* responsive for tablet devices */
 @media only screen and (max-width: 768px) {
     .menu, nav ul{
@@ -296,7 +310,14 @@ footer > p{
         text-align: center;
     }
     .three-box{
-        gap: 5px;
+        gap: 0;
+        flex-wrap: wrap;
+    }
+    .three-box-one{
+        margin: 5px 0;
+    }
+    .four-logo{
+        margin-bottom: 50px;
     }
     footer{
         text-align: center;
@@ -316,3 +337,4 @@ footer > p{
     }
 }
 
+/* media query end  */
