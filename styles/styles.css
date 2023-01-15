@@ -114,7 +114,6 @@ nav ul{
     gap: 50px;
 }
 .left-two{
-    /* width: 100%; */
     max-width: 585px;
 }
 .left-two h2{
@@ -132,7 +131,8 @@ nav ul{
     font-size: 20px;
 }
 .left-two-box p{
-    white-space: nowrap;
+    max-width: 585px;
+    white-space: wrap;
     overflow: hidden; 
     text-overflow: ellipsis;
 }
@@ -261,8 +261,9 @@ footer > p{
     .left-one{
         grid-template-columns: 1fr;
     }
-    section .two{
+    .section-two{
         grid-template-columns: 1fr;
+        justify-items: center;
     }
     .three > h2, .three > p{
         text-align: center;
