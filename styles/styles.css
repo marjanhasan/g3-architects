@@ -247,6 +247,8 @@ footer > p{
 }
 
 /* footer section end  */
+
+/* responsive for tablet devices */
 @media only screen and (max-width: 768px) {
     .menu, nav ul{
         flex-direction: column;
@@ -272,7 +274,9 @@ footer > p{
         text-align: center;
     }
 }
-@media only screen and (max-width: 584px) {
+
+/* responsive for mobile devices  */
+@media only screen and (max-width: 425px) {
     .left-one{
         grid-template-columns: 1fr;
     }
